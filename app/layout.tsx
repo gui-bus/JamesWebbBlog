@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={montserrat.className}>
         <UIProvider>
-          <Navbar />
+          {/* <Navbar /> */}
 
           {children}
         </UIProvider>

@@ -23,8 +23,17 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
   const data: BlogPostProps = await getData(params.slug);
 
   return (
-    <section className="flex h-full min-h-screen w-full flex-col items-center gap-y-5 p-5">
-      <div className="flex w-full items-center justify-around">
+    <section className="flex h-full min-h-screen w-full flex-col items-center p-5">
+      <div className="mx-auto flex w-full max-w-4xl items-center justify-around rounded-t-xl bg-neutral-800">
+        <Image
+          src="/logo.png"
+          alt="James Webb"
+          height={0}
+          width={0}
+          sizes="100vw"
+          className="h-auto w-40 object-cover"
+        />
+
         <Link href="/">
           <Button
             color="warning"
@@ -34,22 +43,19 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
             Voltar
           </Button>
         </Link>
-        <p className="underline opacity-50">{data.title} - Blog</p>
       </div>
       <Image
         src={urlFor(data.titleImage).url()}
         alt={data.title}
-        width={800}
-        height={800}
-        className="object-cover"
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="object-cover w-full max-w-4xl h-auto rounded-b-xl"
         priority
       />
-      <h1 className="line-clamp-2 text-2xl font-bold md:text-3xl">
-        {data.title}
-      </h1>
-
-      <div className="mt-16 prose prose-blue prose-base prose-headings:text-center prose-li:marker:text-[#F5A524]">
-        <PortableText value={data.content}/>
+      
+      <div className="prose prose-blue prose-base prose-headings:text-center prose-li:marker:text-[#F5A524] mt-10">
+        <PortableText value={data.content} />
       </div>
     </section>
   );
