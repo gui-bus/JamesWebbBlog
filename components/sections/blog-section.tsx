@@ -10,9 +10,10 @@ import {
 } from "@/components/ui/carousel";
 
 import { Card, CardHeader, CardFooter, Link } from "@nextui-org/react";
-import { TbListDetails } from "react-icons/tb";
 
 import { Button, Image } from "@nextui-org/react";
+
+export const revalidate = 30;
 
 async function getData() {
   const query = `*[_type == 'blog'] | order(_createdAt desc){

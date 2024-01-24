@@ -5,6 +5,8 @@ import Image from "next/image";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { PortableText } from "@portabletext/react";
 
+export const revalidate = 30;
+
 async function getData(slug: string) {
   const query = `
     *[_type == 'blog' && slug.current == '${slug}']{
