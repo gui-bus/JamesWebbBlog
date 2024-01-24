@@ -32,7 +32,7 @@ const BlogSection = async () => {
   const data: BlogCardProps[] = await getData();
 
   return (
-    <section className="flex h-full w-full flex-col items-center justify-center gap-y-6 bg-zinc-50 px-5 py-10">
+    <section className="flex h-full w-full flex-col items-center justify-center gap-y-6 bg-neutral-100 px-5 py-10">
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-2 text-center">
         <h2 className="text-2xl font-black uppercase md:text-4xl">
           Desvendando os mistérios do universo!
