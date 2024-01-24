@@ -72,19 +72,11 @@ const BlogSection = async () => {
                       {post.smallDescription}
                     </p>
                     <Link
-                      href={`/blog/${post.currentSlug}`}
-                      className="w-full"
                       isExternal
+                      href={`/blog/${post.currentSlug}`}
+                      className="flex w-full justify-center rounded-xl bg-[#F5A524] px-10 py-2 text-center text-sm font-medium text-white"
                     >
-                      <Button
-                        radius="sm"
-                        size="sm"
-                        className="w-full px-10 font-medium"
-                        variant="shadow"
-                        color="warning"
-                      >
-                        Ver mais detalhes
-                      </Button>
+                      Ver mais detalhes
                     </Link>
                   </div>
                 </CardFooter>
