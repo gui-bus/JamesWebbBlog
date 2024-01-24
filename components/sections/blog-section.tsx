@@ -71,7 +71,11 @@ const BlogSection = async () => {
                     <p className="text-tiny line-clamp-2 text-center text-white">
                       {post.smallDescription}
                     </p>
-                    <Link href={`/blog/${post.currentSlug}`}>
+                    <Link
+                      href={`/blog/${post.currentSlug}`}
+                      className="w-full"
+                      isExternal
+                    >
                       <Button
                         radius="sm"
                         size="sm"
