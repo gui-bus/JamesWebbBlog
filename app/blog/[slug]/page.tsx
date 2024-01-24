@@ -5,7 +5,7 @@ import Image from "next/image";
 import { IoReturnDownBackOutline } from "react-icons/io5";
 import { PortableText } from "@portabletext/react";
 
-export const revalidate = 30;
+export const revalidate = 15;
 
 async function getData(slug: string) {
   const query = `

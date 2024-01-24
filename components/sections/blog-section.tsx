@@ -13,7 +13,7 @@ import { Card, CardHeader, CardFooter, Link } from "@nextui-org/react";
 
 import { Button, Image } from "@nextui-org/react";
 
-export const revalidate = 30;
+export const revalidate = 15;
 
 async function getData() {
   const query = `*[_type == 'blog'] | order(_createdAt desc){
