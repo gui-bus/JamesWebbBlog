@@ -20,9 +20,8 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={montserrat.className}>
         <UIProvider>
-          <div className="absolute w-full">
-            <Navbar />
-          </div>
+          <Navbar />
+
           {children}
         </UIProvider>
       </body>

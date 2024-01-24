@@ -30,8 +30,6 @@ async function getData() {
 const BlogSection = async () => {
   const data: BlogCardProps[] = await getData();
 
-  console.log(data);
-
   return (
     <section className="flex h-full w-full flex-col items-center justify-center gap-y-6 bg-zinc-50 px-5 py-10">
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center gap-2 text-center">
