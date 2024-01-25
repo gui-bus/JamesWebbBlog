@@ -72,24 +72,21 @@ const BlogSection = async () => {
                     <p className="text-tiny line-clamp-2 text-center text-white">
                       {post.smallDescription}
                     </p>
-                    {/* <Link
-                      isExternal
-                      href={`/blog/${post.currentSlug}`}
-                      className="flex w-full justify-center rounded-xl bg-[#F5A524] px-10 py-2 text-center text-sm font-medium text-white"
-                    >
-                      Ver mais detalhes
-                    </Link> */}
                   </div>
                 </CardFooter>
               </Card>
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <div className="hidden md:block">
+          <CarouselPrevious />
+          <CarouselNext />
+        </div>
       </Carousel>
 
-      <h4 className="text-center">Para mais informações sobre as imagens acesse o blog James Webb</h4>
+      <h4 className="text-center">
+        Para mais informações sobre as imagens acesse o blog James Webb
+      </h4>
       <Link
         href="/blog"
         className="mx-auto flex w-full max-w-md justify-center rounded-xl bg-[#F5A524] px-10 py-5 text-center text-sm font-medium text-white"

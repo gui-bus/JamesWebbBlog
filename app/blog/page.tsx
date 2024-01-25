@@ -53,7 +53,7 @@ const BlogPage = async () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 select-none">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 select-none px-5">
         {data.map((post) => (
           <Card className="border-none" key={post.currentSlug}>
             <CardHeader className="absolute top-1 z-10 flex-col items-start">

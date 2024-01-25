@@ -42,7 +42,7 @@ const TimelineSection = () => {
   ];
 
   return (
-    <section className="mx-auto flex h-auto w-full max-w-6xl items-center justify-center pb-10 px-5">
+    <section className="mx-auto flex h-auto w-full max-w-6xl items-center justify-center pb-10 px-5 bg-neutral-100">
       <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
         <div className="flex md:w-2/3 flex-col items-center justify-center text-center">
           <h3 className="text-3xl font-bold">Órbita</h3>
