@@ -1,4 +1,5 @@
 import { Card, CardBody, CardHeader } from "@nextui-org/react";
+import { Separator } from "../ui/separator";
 
 const CharacteristicsSection = () => {
   return (
@@ -79,6 +80,8 @@ const CharacteristicsSection = () => {
           </Card>
         </div>
       </div>
+
+      <Separator className="w-full max-w-6xl mx-auto mt-10"/>
     </section>
   );
 };

@@ -79,7 +79,7 @@ export default function Footer() {
         <Link href="/">
           <Image
             src={Logo}
-            alt="ONDesk"
+            alt="James Webb"
             width={200}
             height={50}
             className="h-auto w-52 object-contain"
