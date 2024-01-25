@@ -36,7 +36,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
           className="h-auto w-40 object-cover"
         />
 
-        <Link href="/">
+        <Link href="/blog">
           <Button
             color="warning"
             variant="shadow"

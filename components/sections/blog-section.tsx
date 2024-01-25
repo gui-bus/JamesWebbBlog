@@ -11,7 +11,8 @@ import {
 
 import { Card, CardHeader, CardFooter, Link } from "@nextui-org/react";
 
-import { Button, Image } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
+import { BiLinkExternal } from "react-icons/bi";
 
 export const revalidate = 15;
 
@@ -71,13 +72,13 @@ const BlogSection = async () => {
                     <p className="text-tiny line-clamp-2 text-center text-white">
                       {post.smallDescription}
                     </p>
-                    <Link
+                    {/* <Link
                       isExternal
                       href={`/blog/${post.currentSlug}`}
                       className="flex w-full justify-center rounded-xl bg-[#F5A524] px-10 py-2 text-center text-sm font-medium text-white"
                     >
                       Ver mais detalhes
-                    </Link>
+                    </Link> */}
                   </div>
                 </CardFooter>
               </Card>
@@ -87,6 +88,14 @@ const BlogSection = async () => {
         <CarouselPrevious />
         <CarouselNext />
       </Carousel>
+
+      <h4>Para mais informações sobre as imagens acesse o blog James Webb</h4>
+      <Link
+        href="/blog"
+        className="mx-auto flex w-full max-w-md justify-center rounded-xl bg-[#F5A524] px-10 py-5 text-center text-sm font-medium text-white"
+      >
+        Acessar blog <BiLinkExternal size={20} className="ml-2" />
+      </Link>
     </section>
   );
 };
