@@ -89,7 +89,7 @@ const BlogSection = async () => {
         <CarouselNext />
       </Carousel>
 
-      <h4>Para mais informações sobre as imagens acesse o blog James Webb</h4>
+      <h4 className="text-center">Para mais informações sobre as imagens acesse o blog James Webb</h4>
       <Link
         href="/blog"
         className="mx-auto flex w-full max-w-md justify-center rounded-xl bg-[#F5A524] px-10 py-5 text-center text-sm font-medium text-white"

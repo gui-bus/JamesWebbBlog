@@ -26,7 +26,7 @@ const BlogPage = async () => {
 
   return (
     <section className="flex h-full w-full flex-col items-center justify-center gap-y-6 bg-neutral-100">
-      <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 rounded-b-3xl bg-neutral-800 px-5 pb-10 text-center text-white">
+      <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 rounded-b-3xl bg-[#181717] px-5 pb-10 text-center text-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center">
           <Image
             src="/logo.png"

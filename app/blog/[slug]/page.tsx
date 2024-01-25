@@ -26,7 +26,7 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
 
   return (
     <section className="flex h-full min-h-screen w-full flex-col items-center p-5">
-      <div className="mx-auto flex w-full max-w-4xl items-center justify-around rounded-t-xl bg-neutral-800">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-around rounded-xl bg-[#181717]">
         <Image
           src="/logo.png"
           alt="James Webb"
@@ -46,17 +46,18 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
           </Button>
         </Link>
       </div>
+      
       <Image
         src={urlFor(data.titleImage).url()}
         alt={data.title}
         width={0}
         height={0}
         sizes="100vw"
-        className="object-cover w-full max-w-4xl h-auto rounded-b-xl"
+        className="object-cover w-full max-w-6xl h-auto rounded-xl mt-5"
         priority
       />
       
-      <div className="prose prose-blue prose-base prose-headings:text-center prose-li:marker:text-[#F5A524] mt-10">
+      <div className="prose prose-blue prose-base prose-headings:text-center prose-li:marker:text-[#F5A524] mt-10 w-full max-w-4xl mx-auto px-5">
         <PortableText value={data.content} />
       </div>
     </section>
