@@ -4,6 +4,7 @@ import AboutSection from "@/components/sections/about-section";
 import InfoSection from "@/components/sections/info-section";
 import MissionSection from "@/components/sections/mission-section";
 import CharacteristicsSection from "@/components/sections/characteristics-section";
+import EndingSection from "@/components/sections/ending-section";
 
 export const revalidate = 15;
 
@@ -16,6 +17,7 @@ export default function Home() {
       <InfoSection />
       <MissionSection />
       <CharacteristicsSection />
+      <EndingSection />
     </main>
   );
 }
