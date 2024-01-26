@@ -67,9 +67,9 @@ const BlogSection = async () => {
                   sizes="100vw"
                   className="z-0 mx-auto aspect-square h-full w-full max-w-sm rounded-xl object-cover"
                 />
-                <CardFooter className="border-t-1 border-default-600 dark:border-default-100 absolute bottom-0 z-50 bg-black/60">
+                <CardFooter className="absolute bottom-0 z-50 border-t-1 border-default-600 bg-black/60 dark:border-default-100">
                   <div className="flex flex-col items-center justify-center gap-2">
-                    <p className="text-tiny line-clamp-3 text-center text-white">
+                    <p className="line-clamp-3 text-center text-tiny text-white">
                       {post.smallDescription}
                     </p>
                   </div>
@@ -84,9 +84,16 @@ const BlogSection = async () => {
         </div>
       </Carousel>
 
-      <h4 className="text-center">
-        Para mais informações sobre as imagens acesse o blog James Webb
-      </h4>
+      <div className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center">
+        <h4 className="text-2xl font-black uppercase text-center">
+          Embarque em uma jornada fascinante!
+        </h4>
+        <p className="text-center text-sm text-neutral-600">
+         Não deixe de conferir imagens deslumbrantes com o Blog James Webb,
+          sua porta de entrada para o cosmos.
+        </p>
+      </div>
+
       <Link
         href="/blog"
         className="mx-auto flex w-full max-w-md justify-center rounded-xl bg-[#F5A524] px-10 py-5 text-center text-sm font-medium text-white"
