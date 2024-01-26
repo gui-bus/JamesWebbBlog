@@ -9,7 +9,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-import { Card, CardHeader, CardFooter, Link } from "@nextui-org/react";
+import { Card, CardHeader, CardFooter, Link, Button } from "@nextui-org/react";
 
 import { Image } from "@nextui-org/react";
 import { BiLinkExternal } from "react-icons/bi";
@@ -52,7 +52,7 @@ const BlogSection = async () => {
               key={post.currentSlug}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="border-none max-w-lg mx-auto">
+              <Card className="mx-auto max-w-lg border-none">
                 <CardHeader className="absolute top-1 z-10 flex-col items-start">
                   <h4 className="mx-auto line-clamp-1 text-xl font-bold text-white">
                     {post.title}
@@ -85,20 +85,25 @@ const BlogSection = async () => {
       </Carousel>
 
       <div className="mx-auto flex w-full max-w-4xl flex-col items-center justify-center">
-        <h4 className="text-2xl font-black uppercase text-center">
+        <h4 className="text-center text-2xl font-black uppercase">
           Embarque em uma jornada fascinante!
         </h4>
         <p className="text-center text-sm text-neutral-600">
-         Não deixe de conferir imagens deslumbrantes com o Blog James Webb,
-          sua porta de entrada para o cosmos.
+          Não deixe de conferir imagens deslumbrantes com o Blog James Webb, sua
+          porta de entrada para o cosmos.
         </p>
       </div>
 
-      <Link
-        href="/blog"
-        className="mx-auto flex w-full max-w-md justify-center rounded-xl bg-[#F5A524] px-10 py-5 text-center text-sm font-medium text-white"
-      >
-        Acessar blog <BiLinkExternal size={20} className="ml-2" />
+      <Link href="/blog" className="mx-auto w-full max-w-xl">
+        <Button
+          color="warning"
+          variant="shadow"
+          size="lg"
+          endContent={<BiLinkExternal size={20} />}
+          className="h-16 w-full text-white"
+        >
+          Acessar blog
+        </Button>
       </Link>
     </section>
   );
