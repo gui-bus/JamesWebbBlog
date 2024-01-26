@@ -69,7 +69,7 @@ const BlogSection = async () => {
                 />
                 <CardFooter className="border-t-1 border-default-600 dark:border-default-100 absolute bottom-0 z-50 bg-black/60">
                   <div className="flex flex-col items-center justify-center gap-2">
-                    <p className="text-tiny line-clamp-2 text-center text-white">
+                    <p className="text-tiny line-clamp-3 text-center text-white">
                       {post.smallDescription}
                     </p>
                   </div>
