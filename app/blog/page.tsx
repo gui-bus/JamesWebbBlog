@@ -28,16 +28,7 @@ const BlogPage = async () => {
     <section className="flex  h-full w-full flex-col items-center  justify-center gap-y-6 bg-neutral-100">
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 rounded-b-[10%] md:rounded-b-[30%] bg-[#181717] px-5 pb-10 text-center text-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center">
-          {/* <Link href="/">
-            <Image
-              src="/logo.png"
-              alt="James Webb"
-              sizes="100vw"
-              height={0}
-              width={0}
-              className="h-auto w-60 object-cover lg:w-80"
-            />
-          </Link> */}
+         
 
           <div className="flex flex-col items-center justify-center gap-3 pt-5">
             <h2 className="text-xl font-black uppercase md:text-4xl">
