@@ -95,7 +95,7 @@ const BlogPage = async () => {
         ))}
       </div>
 
-      <Link href="/" className="mx-auto mb-5 w-full max-w-md">
+      <Link href="/" className="mx-auto mb-5 w-full max-w-md px-5">
         <Button
           color="warning"
           variant="shadow"
