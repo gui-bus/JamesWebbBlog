@@ -28,14 +28,16 @@ const BlogPage = async () => {
     <section className="flex h-full w-full flex-col items-center justify-center gap-y-6 bg-neutral-100">
       <div className="mx-auto flex w-full flex-col items-center justify-center gap-2 rounded-b-3xl bg-[#181717] px-5 pb-10 text-center text-white">
         <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center">
-          <Image
-            src="/logo.png"
-            alt="James Webb"
-            sizes="100vw"
-            height={0}
-            width={0}
-            className="h-auto w-60 object-cover lg:w-80"
-          />
+          <Link href="/">
+            <Image
+              src="/logo.png"
+              alt="James Webb"
+              sizes="100vw"
+              height={0}
+              width={0}
+              className="h-auto w-60 object-cover lg:w-80"
+            />
+          </Link>
 
           <div className="flex flex-col items-center justify-center gap-3">
             <h2 className="text-xl font-black uppercase md:text-4xl">
@@ -53,7 +55,7 @@ const BlogPage = async () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 select-none px-5">
+      <div className="grid select-none grid-cols-1 gap-4 px-5 md:grid-cols-2 lg:grid-cols-3">
         {data.map((post) => (
           <Card className="border-none" key={post.currentSlug}>
             <CardHeader className="absolute top-1 z-10 flex-col items-start">
@@ -71,9 +73,9 @@ const BlogPage = async () => {
               draggable={false}
               className="z-0 mx-auto aspect-square h-full w-full max-w-sm rounded-xl object-cover"
             />
-            <CardFooter className="border-t-1 border-default-600 dark:border-default-100 absolute bottom-0 z-50 bg-black/60">
+            <CardFooter className="absolute bottom-0 z-50 border-t-1 border-default-600 bg-black/60 dark:border-default-100">
               <div className="flex flex-col items-center justify-center gap-2">
-                <p className="text-tiny line-clamp-3 text-center text-white">
+                <p className="line-clamp-3 text-center text-tiny text-white">
                   {post.smallDescription}
                 </p>
                 <Link
