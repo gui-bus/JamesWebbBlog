@@ -25,41 +25,47 @@ const BlogPage = async ({ params }: { params: { slug: string } }) => {
   const data: BlogPostProps = await getData(params.slug);
 
   return (
-    <section className="flex h-full min-h-screen w-full flex-col items-center p-5">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-around rounded-xl bg-[#181717]">
-        <Image
-          src="/logo.png"
-          alt="James Webb"
-          height={0}
-          width={0}
-          sizes="100vw"
-          className="h-auto w-40 object-cover"
-        />
+    <section className="flex h-full w-full flex-col items-center bg-neutral-800 p-5 text-white">
+      <Link href="/blog" className="w-full md:hidden md:w-fit">
+        <Button
+          color="warning"
+          variant="shadow"
+          size="sm"
+          endContent={<IoReturnDownBackOutline size={20} />}
+          className="h-10 w-full text-white"
+        >
+          Voltar
+        </Button>
+      </Link>
 
-        <Link href="/blog">
-          <Button
-            color="warning"
-            variant="shadow"
-            startContent={<IoReturnDownBackOutline size={20} />}
-          >
-            Voltar
-          </Button>
-        </Link>
-      </div>
-      
       <Image
         src={urlFor(data.titleImage).url()}
         alt={data.title}
         width={0}
         height={0}
         sizes="100vw"
-        className="object-cover w-full max-w-6xl h-auto rounded-xl mt-5"
+        className="mt-5 h-auto w-full max-w-6xl rounded-xl object-cover"
         priority
       />
-      
-      <div className="prose prose-blue prose-base prose-headings:text-center prose-li:marker:text-[#F5A524] mt-10 w-full max-w-4xl mx-auto px-5">
+
+      <div className="prose prose-base prose-blue mx-auto mt-10 w-full max-w-5xl px-5 text-white prose-headings:text-center prose-headings:text-white prose-strong:text-white prose-li:marker:text-[#F5A524]">
         <PortableText value={data.content} />
       </div>
+
+      <Link
+        href="/blog"
+        className="mx-auto mt-5 hidden w-full max-w-md md:block"
+      >
+        <Button
+          color="warning"
+          variant="shadow"
+          size="sm"
+          endContent={<IoReturnDownBackOutline size={20} />}
+          className="h-10 w-full text-white"
+        >
+          Voltar
+        </Button>
+      </Link>
     </section>
   );
 };
