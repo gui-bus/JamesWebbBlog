@@ -15,7 +15,7 @@ import { LuMenu } from "react-icons/lu";
 import NavLinks from "./ui/nav-links";
 const Navbar = () => {
   return (
-    <header className="relative mx-auto flex w-full items-center justify-around bg-black/80">
+    <header className="relative mx-auto flex w-full items-center justify-around bg-[#181717] shadow-xl py-1">
       <Link href="/">
         <Image
           src={logo}

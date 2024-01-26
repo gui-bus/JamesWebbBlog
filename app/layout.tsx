@@ -21,7 +21,9 @@ export default function RootLayout({
     <html lang="pt-BR">
       <body className={montserrat.className}>
         <UIProvider>
-          {/* <Navbar /> */}
+          <div className="md:hidden">
+            <Navbar />
+          </div>
 
           {children}
           <Footer />
