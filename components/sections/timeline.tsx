@@ -42,9 +42,9 @@ const TimelineSection = () => {
   ];
 
   return (
-    <section className="mx-auto flex h-auto w-full max-w-6xl items-center justify-center pb-10 px-5 bg-neutral-100">
-      <div className="flex flex-col items-center justify-center gap-10 md:flex-row">
-        <div className="flex md:w-2/3 flex-col items-center justify-center text-center">
+    <section className="flex h-auto w-full items-center justify-center bg-neutral-100 px-5 pb-10">
+      <div className="mx-auto flex w-full max-w-6xl flex-col items-center justify-center gap-10 md:flex-row">
+        <div className="flex flex-col items-center justify-center text-center md:w-2/3">
           <h3 className="text-3xl font-bold">Órbita</h3>
           <p className="px-5 pb-5 text-center text-sm font-light">
             Conheça um pouco mais sobre os passos essênciais para colocar o

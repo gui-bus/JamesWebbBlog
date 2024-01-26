@@ -52,7 +52,7 @@ const BlogSection = async () => {
               key={post.currentSlug}
               className="md:basis-1/2 lg:basis-1/3"
             >
-              <Card className="border-none">
+              <Card className="border-none max-w-lg mx-auto">
                 <CardHeader className="absolute top-1 z-10 flex-col items-start">
                   <h4 className="mx-auto line-clamp-1 text-xl font-bold text-white">
                     {post.title}
@@ -65,7 +65,7 @@ const BlogSection = async () => {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  className="z-0 mx-auto aspect-square h-full w-full max-w-sm rounded-xl object-cover"
+                  className="z-0 mx-auto aspect-square h-full w-full rounded-xl object-cover"
                 />
                 <CardFooter className="absolute bottom-0 z-50 border-t-1 border-default-600 bg-black/60 dark:border-default-100">
                   <div className="flex flex-col items-center justify-center gap-2">
@@ -78,7 +78,7 @@ const BlogSection = async () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <CarouselPrevious />
           <CarouselNext />
         </div>

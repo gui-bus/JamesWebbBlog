@@ -5,7 +5,6 @@ import {
   FaInstagram,
   FaGithub,
   FaLinkedinIn,
-  FaChevronRight,
 } from "react-icons/fa6";
 
 import Logo from "@/public/logo.png";
@@ -31,58 +30,19 @@ function SocialLink({ href, icon, size }: SocialLinkProps) {
   );
 }
 
-interface FooterLinkProps {
-  text: string;
-}
-
-function FooterLink({ text }: FooterLinkProps) {
-  return (
-    <p className="group flex cursor-pointer items-center justify-center gap-1">
-      <span
-        className="footerLink hidden group-hover:block group-hover:animate-spin"
-        style={{ animationIterationCount: 1, animationDuration: "0.3s" }}
-      >
-        <FaChevronRight size={12} className="text-white" />
-      </span>
-      {text}
-    </p>
-  );
-}
-
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const departments = [
-    "Suporte ao Cliente",
-    "Integração de Sistemas",
-    "Gerenciamento de Clientes",
-    "Acompanhamento de Chamados",
-  ];
-
-  const institucionals = [
-    "Nossa Equipe",
-    "Sobre a ONDesk",
-    "Política de Privacidade",
-    "Depoimentos dos Clientes",
-  ];
-
-  const helps = [
-    "Suporte Técnico",
-    "Como Usar a ONDesk",
-    "Integração de Serviços",
-    "Recursos da Plataforma",
-  ];
-
   return (
-    <footer className="mx-auto w-full cursor-default items-center justify-center bg-[#181717] pt-8 text-white shadow-xl md:px-0">
-      <section className="flex flex-col items-center justify-around gap-y-4 px-4 pb-8 shadow-xl md:flex-row md:gap-y-0">
+    <footer className="mx-auto w-full cursor-default items-center justify-center bg-[#181717] pt-3 text-white shadow-xl md:px-0">
+      <section className="flex flex-col items-center justify-around gap-y-4 px-4 pb-3 shadow-xl md:flex-row md:gap-y-0">
         <Link href="/">
           <Image
             src={Logo}
             alt="James Webb"
             width={200}
             height={50}
-            className="h-auto w-52 object-contain"
+            className="h-auto w-40 object-contain"
           />
         </Link>
 
