@@ -56,7 +56,7 @@ const BlogPage = async () => {
         </div>
       </div>
 
-      <div className="grid select-none grid-cols-1 gap-4 px-5 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid select-none grid-cols-1 gap-4 px-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {data.map((post) => (
           <Card className="border-none" key={post.currentSlug}>
             <CardHeader className="absolute top-1 z-10 flex-col items-start">
@@ -79,11 +79,15 @@ const BlogPage = async () => {
                 <p className="line-clamp-3 text-center text-tiny text-white">
                   {post.smallDescription}
                 </p>
-                <Link
-                  href={`/blog/${post.currentSlug}`}
-                  className="flex w-full justify-center rounded-xl bg-[#F5A524] px-10 py-2 text-center text-sm font-medium text-white"
-                >
-                  Ver mais detalhes
+                <Link href={`/blog/${post.currentSlug}`} className="w-full">
+                  <Button
+                    color="warning"
+                    variant="shadow"
+                    size="sm"
+                    className="w-full text-white"
+                  >
+                    Ver mais detalhes
+                  </Button>
                 </Link>
               </div>
             </CardFooter>
@@ -91,13 +95,13 @@ const BlogPage = async () => {
         ))}
       </div>
 
-      <Link href="/" className="mx-auto mb-5 w-full max-w-xl">
+      <Link href="/" className="mx-auto mb-5 w-full max-w-md">
         <Button
           color="warning"
           variant="shadow"
-          size="lg"
+          size="sm"
           endContent={<SiHomeadvisor size={20} />}
-          className="h-16 w-full text-white"
+          className="h-10 w-full text-white"
         >
           Voltar para a página inicial
         </Button>
