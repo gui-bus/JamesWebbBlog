@@ -19,11 +19,11 @@ const InfoSection = () => {
   return (
     <section className="w-full bg-neutral-100 p-5 lg:px-0 py-10">
       <div className="mx-auto w-full max-w-6xl">
-        <div className="mb-5 flex flex-col items-center justify-center gap-2">
-          <h4 className="text-3xl font-bold">Dados gerais e Instrumentos</h4>
+        <div className="mb-5 flex flex-col items-center justify-center gap-2 text-center">
+          <h4 className="text-3xl font-bold">Dados gerais</h4>
           <p className="text-sm font-light">
             Confira abaixo algumas das especificações técnicas e informações
-            gerais do James Webb
+            gerais dos instrumentos do James Webb
           </p>
         </div>
 
