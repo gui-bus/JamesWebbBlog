@@ -57,6 +57,7 @@ const TimelineSection = () => {
             width={0}
             height={0}
             sizes="100vw"
+            priority
             className="h-auto w-full object-contain"
           />
         </div>
